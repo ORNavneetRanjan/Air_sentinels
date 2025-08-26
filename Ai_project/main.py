@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, redirect, url_for, session
+from flask import Flask, render_template, request, redirect, url_for
 from flask_sqlalchemy import SQLAlchemy
 from werkzeug.security import generate_password_hash, check_password_hash
 import pickle
@@ -8,9 +8,9 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///site.db'
 app.secret_key = "hello@air_sentinels"
 db = SQLAlchemy(app)
 
-knn = pickle.load(open("knn.pkl", "rb"))
-dt = pickle.load(open("dt.pkl", "rb"))
-rf = pickle.load(open("rf.pkl", "rb"))
+knn = pickle.load(open("Ai_project\knn.pkl", "rb"))
+dt = pickle.load(open("Ai_project\dt.pkl", "rb"))
+rf = pickle.load(open("Ai_project\rf.pkl", "rb"))
 
 
 class User(db.Model):

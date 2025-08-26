@@ -1,0 +1,41 @@
+# Ignore Python bytecode and cache
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore IDE settings
+.idea/
+.vscode/
+
+# Ignore model files
+*.pkl
+*.h5
+*.joblib
+
+# Ignore datasets
+*.csv
+*.tsv
+*.xlsx
+
+# Ignore temporary files
+tempCodeRunnerFile.py
+*.log
+*.tmp
+
+# Ignore instance folder (often used for Flask configs)
+instance/
+
+# Ignore environment files
+.env
+*.env
+
+# Ignore static and template build artifacts (if generated)
+static/
+templates/
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
